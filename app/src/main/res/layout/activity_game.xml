@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgroundmain">
+        <com.example.pushbox.View_pushBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nnn"/>
+        <!-- 进行布局的自定义插入，把之前写的view布局插入其中 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true">
+            <!-- 这是一个相当于小控制器面板的界面布局的实现，
+            主要就是用来控制小人的上下左右移动以及返回上一关，下一关，返回上一步等的跳转 -->
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/back"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/up"
+                android:layout_above="@+id/back"
+                android:layout_alignLeft="@+id/back"
+                android:background="@mipmap/up"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/down"
+                android:layout_below="@+id/back"
+                android:layout_alignLeft="@+id/back"
+                android:background="@mipmap/down"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/left"
+                android:layout_toLeftOf="@+id/back"
+                android:layout_alignTop="@+id/back"
+                android:background="@mipmap/left"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/right"
+                android:layout_alignTop="@+id/back"
+                android:layout_toRightOf="@+id/back"
+                android:background="@mipmap/right"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/previous"
+                android:layout_marginBottom="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:background="@mipmap/previous"/>
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/next"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/next"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

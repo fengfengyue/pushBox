@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/select_title"
+        android:text="关卡选择"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_content"
+        android:layout_below="@id/select_title">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOne"
+            android:text="第一关"
+            android:textSize="25dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTwo"
+            android:textSize="25dp"
+            android:text="第二关"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnThree"
+            android:textSize="25dp"
+            android:text="第三关"/>
+    </TableLayout>
+
+</RelativeLayout>

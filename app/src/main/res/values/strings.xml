@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">push box</string>
+    <string name="ruler">经典的推箱子是一个来自日本的古老游戏，
+        目的是在训练你的逻辑思考能力。
+        在一个狭小的仓库中，要求把木箱放到指定的位置,
+        稍不小心就会出现箱子无法移动或者通道被堵住的情况，
+        所以需要巧妙的利用有限的空间和通道，合理安排移动的次序和位置，
+        才能顺利的完成任务。</string>
+    <string name="title_activity_select">SelectActivity</string>
+    <string name="title_activity_ruler">RulerActivity</string>
+    <string name="title_activity_one">OneActivity</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_continue">ContinueActivity</string>
+</resources>
